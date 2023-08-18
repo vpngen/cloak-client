@@ -1,0 +1,26 @@
+name: "cloak-client"
+arch: "all"
+platform: "linux"
+version: ${PACKAGE_VERSION}
+section: "default"
+priority: "optional"
+release: ${PACKAGE_RELEASE}
+
+provides:
+- cloak-client
+
+maintainer: "Ingmund Ollson <ingmund@proton.me>"
+description: VPNGen Cloak Client
+vendor: "VPNGen"
+homepage: "http://vpngen.org"
+
+contents:
+- src: bin/ck-client
+  dst: /usr/sbin/ck-client
+  file_info:
+    mode: 0555
+    owner: root
+    group: root
+
+deb:
+  compression: xz
