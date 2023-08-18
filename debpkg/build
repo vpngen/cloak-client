@@ -89,7 +89,7 @@ if [ "$1" = "pkg" ]; then
 
         git clone -b "${BRANCH}" ssh://git@github.com/vpngen/cloak-client
 
-        construct_version "cloak-server"
+        construct_version "cloak-client"
 
         git clone ssh://git@github.com/cbeuw/Cloak
         
