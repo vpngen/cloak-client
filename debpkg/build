@@ -89,7 +89,7 @@ if [ "$1" = "pkg" ]; then
 
         construct_version "cloak-client"
 
-        git clone -b v2.7.1-pre https://github.com/cbeuw/Cloak
+        git clone -b v2.8.0 https://github.com/cbeuw/Cloak
         
         go build -C Cloak/cmd/ck-client -o ../../../bin/ck-client
 
